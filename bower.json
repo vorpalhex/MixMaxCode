@@ -1,0 +1,23 @@
+{
+  "name": "mixmaxcode",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Derrick Hinkle <dhinkle09@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "codemirror": "^5.19.0",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MixMaxCode</title>
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="vendor/codemirror/theme/dracula.css">
+</head>
+<body>
+  <div class="container">
+    <div id="editorControls" class="form-horizontal">
+      <div class="form-group">
+
+        <div class="col-md-6">
+          <label for="grammarSelect">Grammar</label>
+          <select name="grammarSelect" id="grammarSelect" class="form-control">
+            <option value="go">Golang</option>
+            <option value="javascript" selected="selected">Javascript</option>
+            <option value="gfm">Markdown</option>
+            <option value="lua">Lua</option>
+            <option value="perl">Perl</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="keybindSelect">Keybind</label>
+          <select name="keybindSelect" id="keybindSelect" class="form-control">
+            <option value="emacs">Emacs</option>
+            <option value="sublime" selected="selected">Sublime</option>
+            <option value="vim">Vim</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <button id="cancelBtn" type="button" class="btn btn-default pull-right" style="margin-top: 1.5em;"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <textarea name="codeEditor" id="codeEditor" cols="30" rows="10"></textarea>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="margin-top: 1em;">
+        <button id="insertBtn" class="btn btn-success pull-right">Insert <span class="glyphicon glyphicon-ok"></span></button>
+      </div>
+    </div>
+
+  </div>
+  <script defer src="https://d1xa36cy0xt122.cloudfront.net/v1/Mixmax.js"></script>
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vendor/codemirror-compressed.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
