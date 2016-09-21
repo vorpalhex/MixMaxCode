@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec test/"
   },
   "author": "Derrick Hinkle <dhinkle09@gmail.com>",
   "license": "ISC",
@@ -15,5 +15,10 @@
     "express": "^4.14.0",
     "highlight": "^0.2.4",
     "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "request": "^2.75.0"
   }
 }
